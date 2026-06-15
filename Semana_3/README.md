@@ -2,7 +2,7 @@
 
 ## Estudiante
 
-**Nombre Completo:** Karen Anahi Yanza Yanza Maza
+**Nombre Completo:** Karen Anahi Yanza Maza
 
 ---
 
