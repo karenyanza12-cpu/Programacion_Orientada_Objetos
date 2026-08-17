@@ -59,15 +59,8 @@ class Restaurante:
             print("Producto no encontrado.")
             return False
 
-        producto.actualizar(
-            nombre,
-            categoria,
-            precio,
-            disponible
-        )
-
+        producto.actualizar(nombre, categoria, precio, disponible)
         self.categorias.add(categoria)
-
         print("Producto actualizado correctamente.")
         return True
 
@@ -79,18 +72,13 @@ class Restaurante:
             return False
 
         self.productos.remove(producto)
-
-        self.actualizar_categorias()
-
         print("Producto eliminado correctamente.")
         return True
 
     def listar_productos(self):
         if not self.productos:
-            print("No existen productos registrados.")
+            print("\nNo hay productos registrados.")
             return
-
-        print("\n========== PRODUCTOS ==========")
 
         for producto in self.productos:
             producto.mostrar_informacion()
@@ -98,50 +86,27 @@ class Restaurante:
     # ---------------- USUARIOS ----------------
 
     def registrar_usuario(self, usuario):
-        for usuario_registrado in self.usuarios:
-            if usuario_registrado.identificacion == usuario.identificacion:
-                print("La identificación ya está registrada.")
-                return False
-
         self.usuarios.append(usuario)
-
         print("Usuario registrado correctamente.")
         return True
 
     def listar_usuarios(self):
         if not self.usuarios:
-            print("No existen usuarios registrados.")
+            print("\nNo hay usuarios registrados.")
             return
 
-        print("\n========== USUARIOS ==========")
-
-        for usuario in self.usuarios:
-            print("----------------------------------------")
-            print(f"Identificación: {usuario.identificacion}")
-            print(f"Nombre: {usuario.nombre}")
-            print(f"Correo: {usuario.correo}")
-
-    def buscar_usuario(self, identificacion):
-        for usuario in self.usuarios:
-            if usuario.identificacion == identificacion:
-                return usuario
-
-        return None
+        print("\n=== LISTA DE USUARIOS ===")
+        for u in self.usuarios:
+            print(f"ID: {u.identificacion} | Nombre: {u.nombre} | Correo: {u.correo}")
 
     # ---------------- CATEGORÍAS ----------------
 
-    def actualizar_categorias(self):
-        self.categorias.clear()
-
-        for producto in self.productos:
-            self.categorias.add(producto.categoria)
-
     def mostrar_categorias(self):
         if not self.categorias:
-            print("No existen categorías registradas.")
+            print("\nNo hay categorías registradas.")
             return
 
-        print("\n========== CATEGORÍAS ==========")
-
-        for categoria in sorted(self.categorias):
-            print(f"- {categoria}")
+        print("\n=== CATEGORÍAS ÚNICAS ===")
+        for cat in self.categorias:
+            print(f"- {cat}")
+            

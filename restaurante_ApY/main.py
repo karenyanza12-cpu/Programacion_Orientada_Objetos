@@ -2,7 +2,6 @@ from modelos.producto import Producto
 from modelos.usuario import Usuario
 from servicios.restaurante import Restaurante
 
-
 # Crear el restaurante
 restaurante = Restaurante()
 
@@ -154,40 +153,41 @@ def mostrar_menu():
 
 
 # Menú principal
-while True:
+if __name__ == "__main__":
+    while True:
 
-    mostrar_menu()
+        mostrar_menu()
 
-    opcion = input("Seleccione una opción: ")
+        opcion = input("Seleccione una opción: ")
 
-    if opcion == "1":
-        registrar_producto()
+        if opcion == "1":
+            registrar_producto()
 
-    elif opcion == "2":
-        buscar_producto()
+        elif opcion == "2":
+            buscar_producto()
 
-    elif opcion == "3":
-        actualizar_producto()
+        elif opcion == "3":
+            actualizar_producto()
 
-    elif opcion == "4":
-        eliminar_producto()
+        elif opcion == "4":
+            eliminar_producto()
 
-    elif opcion == "5":
-        restaurante.listar_productos()
+        elif opcion == "5":
+            restaurante.listar_productos()
 
-    elif opcion == "6":
-        registrar_usuario()
+        elif opcion == "6":
+            registrar_usuario()
 
-    elif opcion == "7":
-        restaurante.listar_usuarios()
+        elif opcion == "7":
+            restaurante.listar_usuarios()
 
-    elif opcion == "8":
-        restaurante.mostrar_categorias()
+        elif opcion == "8":
+            restaurante.mostrar_categorias()
 
-    elif opcion == "9":
-        print("\nGracias por utilizar el sistema.")
-        break
+        elif opcion == "9":
+            print("\nGracias por utilizar el sistema.")
+            break
 
-    else:
-        print("\nOpción no válida.")
-        
+        else:
+            print("\nOpción no válida.")
+            
