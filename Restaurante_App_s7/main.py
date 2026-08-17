@@ -100,4 +100,3 @@ while True:
     else:
 
         print("\nOpción no válida.")
-        

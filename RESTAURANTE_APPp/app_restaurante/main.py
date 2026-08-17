@@ -60,3 +60,4 @@ platillo2.cambiar_precio(8.00)
 
 print("Nuevo precio:")
 print(f"${platillo2.obtener_precio():.2f}")
+
