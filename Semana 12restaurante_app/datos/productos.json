@@ -1,0 +1,30 @@
+[
+    {
+        "codigo": 1,
+        "nombre": "Sandwich de pollo",
+        "precio": 3.5,
+        "stock": 10,
+        "disponible": true
+    },
+    {
+        "codigo": 2,
+        "nombre": "Frappe",
+        "precio": 3.0,
+        "stock": 6,
+        "disponible": true
+    },
+    {
+        "codigo": 3,
+        "nombre": "Humitas",
+        "precio": 1.25,
+        "stock": 13,
+        "disponible": true
+    },
+    {
+        "codigo": 4,
+        "nombre": "Bolon de Verde",
+        "precio": 3.0,
+        "stock": 5,
+        "disponible": true
+    }
+]

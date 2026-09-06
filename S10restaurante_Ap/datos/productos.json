@@ -1,0 +1,9 @@
+[
+    {
+        "codigo": 2,
+        "nombre": "Frappé de Nutella",
+        "precio": 3.0,
+        "stock": 5,
+        "disponible": true
+    }
+]

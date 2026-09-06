@@ -1,0 +1,16 @@
+[
+    {
+        "codigo": 1,
+        "nombre": "Sándwich de Pollo",
+        "precio": 3.5,
+        "stock": 10,
+        "disponible": true
+    },
+    {
+        "codigo": 2,
+        "nombre": "Frappé de Nutella",
+        "precio": 3.0,
+        "stock": 5,
+        "disponible": true
+    }
+]
